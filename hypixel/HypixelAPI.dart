@@ -1,6 +1,4 @@
 
-import 'player/Player.dart';
-
 class HypixelAPI {
 
   static String API_KEY = "";

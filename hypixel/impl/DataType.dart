@@ -1,0 +1,20 @@
+enum DataTye {
+  Player,
+  FriendsList,
+  Skyblock,
+  SkyblockAuction,
+  SkyblockBazaar,
+  SkyblockAuctions,
+  SkyblockProfile,
+  SkyblockProfileWithID,
+  Session,
+  RecentGames,
+  GuildByID,
+  GuildByPlayerName,
+  GuildByGuildName,
+  Boosters,
+  KeyInformation,
+  GameCounts,
+  PlayerCounts,
+  WatchDog
+}
