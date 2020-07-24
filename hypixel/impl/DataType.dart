@@ -1,4 +1,4 @@
-enum DataTye {
+enum DataType {
   Player,
   FriendsList,
   Skyblock,
