@@ -4,7 +4,7 @@ import '../player/Leaderboard.dart';
 import '../player/Player.dart';
 import '../utils/ConverterUtils.dart';
 
-void main() {
+void main() async {
 
   HypixelAPI api = HypixelAPI();
   /*
@@ -19,10 +19,6 @@ void main() {
   Leaderboard leaderboard = Leaderboard();
 
   {
-    print(player.getFriendsByUuid(HypixelAPI.TEST_UUID));
-    print(player.getByUuid(HypixelAPI.TEST_UUID));
-    print(player.getByName("RapidTheNerd"));
-    print(player.getFriendsByName("RapidTheNerd"));
-    print(leaderboard.getLeaderboards());
+    print(await player.getFriendsByUuid(HypixelAPI.TEST_UUID));
   }
 }
