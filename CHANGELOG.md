@@ -5,3 +5,7 @@
 
 * Add in guidelines for contributions, issues etc
 * Fix malformed UUID issue
+
+# 0.0.3
+
+* Change to match Dart language specifications
