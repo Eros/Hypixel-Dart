@@ -4,10 +4,13 @@ import '../player/Player.dart';
 
 import 'dart:convert';
 
-void main() {
+void main() async {
 
   HypixelAPI api = HypixelAPI();
-  api.setApiKey("");
+  api.setApiKey("6cba0922-187d-4b38-84eb-10d292cbe0d5");
 
-  
+  Player player = Player();
+
+  print(await player.getData());
+
 }
