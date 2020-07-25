@@ -7,6 +7,12 @@ import '../utils/ConverterUtils.dart';
 void main() {
 
   HypixelAPI api = HypixelAPI();
+  /*
+  NOTE:
+
+  This key is no longer valid nor working and has since been replaced
+  it's primary purpose was for testing.
+   */
   api.setApiKey("6cba0922-187d-4b38-84eb-10d292cbe0d5");
 
   Player player = Player();
