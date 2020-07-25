@@ -1,8 +1,7 @@
 
 import '../HypixelAPI.dart';
 import '../player/Player.dart';
-
-import 'dart:convert';
+import '../utils/ConverterUtils.dart';
 
 void main() {
 
@@ -10,8 +9,10 @@ void main() {
   api.setApiKey("6cba0922-187d-4b38-84eb-10d292cbe0d5");
 
   Player player = Player();
+  ConverterUtils utils = ConverterUtils();
 
   {
-    player.getData();
+    //player.getByUuid(HypixelAPI.TEST_UUID);
+    utils.convertNameToUuid("RapidTheNerd");
   }
 }
