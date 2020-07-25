@@ -1,8 +1,11 @@
 import 'package:http/http.dart' as http;
 import '../HypixelAPI.dart';
+import '../utils/ConverterUtils.dart';
 
 class Player {
+
   Player();
+  ConverterUtils utils = ConverterUtils();
 
   var url = null;
   var response = null;
@@ -14,6 +17,7 @@ class Player {
   }
 
   Future<String> getByName(String name) async {
-
+    Future<String> uuid = utils.convertNameToUuid(name);
+    return getByUuid(uuid.toString());
   }
 }

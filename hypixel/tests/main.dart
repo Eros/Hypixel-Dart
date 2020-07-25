@@ -12,7 +12,7 @@ void main() {
   ConverterUtils utils = ConverterUtils();
 
   {
-    //player.getByUuid(HypixelAPI.TEST_UUID);
-    utils.convertNameToUuid("RapidTheNerd");
+    print(utils.convertNameToUuid("RapidTheNerd"));
+    player.getByName("RapidTheNerd");
   }
 }
