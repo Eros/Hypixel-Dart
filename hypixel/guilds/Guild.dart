@@ -22,8 +22,9 @@ class Guild {
     return response.body;
   }
 
-  Future<String> getByPlayerName(String name) {
-    return getByPlayerUuid(utils.convertNameToUuid(name).toString());
+  Future<String> getByPlayerName(String name) async {
+    var uuid = await utils.convertNameToUuid(name);
+    return getByPlayerUuid(uuid);
   }
 
   Future<String> getByGuildName(String name) async {

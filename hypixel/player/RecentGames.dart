@@ -17,6 +17,7 @@ class RecentGames {
   }
 
   Future<String> getByName(String name) async {
-    return getByUuid(utils.convertNameToUuid(name).toString());
+    var uuid = await utils.convertNameToUuid(name);
+    return getByUuid(uuid);
   }
 }

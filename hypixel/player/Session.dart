@@ -17,7 +17,8 @@ class Session {
   }
 
   Future<String> getSessionByName(String name) async {
-    return getSessionByUuid(utils.convertNameToUuid(name).toString());
+    var uuid = await utils.convertNameToUuid(name);
+    return getSessionByUuid(uuid);
   }
 
 }

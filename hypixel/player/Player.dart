@@ -17,7 +17,8 @@ class Player {
   }
 
   Future<String> getByName(String name) async {
-    return getByUuid(utils.convertNameToUuid(name).toString());
+    var uuid = await utils.convertNameToUuid(name);
+    return getByUuid(uuid);
   }
 
   Future<String> getFriendsByUuid(String uuid) async {
@@ -27,6 +28,7 @@ class Player {
   }
 
   Future<String> getFriendsByName(String name) async {
-    return getFriendsByUuid(utils.convertNameToUuid(name).toString());
+    var uuid = await utils.convertNameToUuid(name);
+    return getFriendsByUuid(uuid);
   }
 }
