@@ -9,3 +9,7 @@
 # 0.0.3
 
 * Change to match Dart language specifications
+
+# 0.0.4
+
+* Add in documentation
