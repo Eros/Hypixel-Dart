@@ -1,10 +1,14 @@
 
 import 'impl/DataType.dart';
+import 'impl/GuildDataType.dart';
+import 'impl/PlayerDataType.dart';
+import 'impl/SkyblockDataType.dart';
 
 class HypixelAPI {
 
   static String API_KEY = "";
-  static String BASE = "https://api.hypixel.net/";
+  static const String BASE = "https://api.hypixel.net/";
+  static const String TEST_UUID = "43db704e10b140b3a38dce059de35a59";
 
   HypixelAPI();
 
@@ -17,44 +21,15 @@ class HypixelAPI {
 
   //todo change this to return the actual information
   //needed
-  void getData(DataType type) {
+  void getData(DataType type, [String name, String uuid, PlayerDataType playerData,
+      GuildDataType guildData, SkyblockDataType skyblockData]) {
 
     switch(type) {
 
-      case DataType.FriendsList:
-        // TODO: Handle this case.
-        break;
-      case DataType.Skyblock:
-        // TODO: Handle this case.
-        break;
-      case DataType.SkyblockAuction:
-        // TODO: Handle this case.
-        break;
-      case DataType.SkyblockBazaar:
-        // TODO: Handle this case.
-        break;
-      case DataType.SkyblockAuctions:
-        // TODO: Handle this case.
-        break;
-      case DataType.SkyblockProfile:
-        // TODO: Handle this case.
-        break;
-      case DataType.SkyblockProfileWithID:
-        // TODO: Handle this case.
-        break;
       case DataType.Session:
         // TODO: Handle this case.
         break;
       case DataType.RecentGames:
-        // TODO: Handle this case.
-        break;
-      case DataType.GuildByID:
-        // TODO: Handle this case.
-        break;
-      case DataType.GuildByPlayerName:
-        // TODO: Handle this case.
-        break;
-      case DataType.GuildByGuildName:
         // TODO: Handle this case.
         break;
       case DataType.Boosters:
@@ -73,6 +48,15 @@ class HypixelAPI {
         // TODO: Handle this case.
         break;
       case DataType.Player:
+        // TODO: Handle this case.
+        break;
+      case DataType.Leaderboards:
+        // TODO: Handle this case.
+        break;
+      case DataType.Guild:
+        // TODO: Handle this case.
+        break;
+      case DataType.Skyblock:
         // TODO: Handle this case.
         break;
     }

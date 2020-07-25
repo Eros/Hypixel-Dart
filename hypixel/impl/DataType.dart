@@ -1,20 +1,13 @@
 enum DataType {
   Player,
-  FriendsList,
-  Skyblock,
-  SkyblockAuction,
-  SkyblockBazaar,
-  SkyblockAuctions,
-  SkyblockProfile,
-  SkyblockProfileWithID,
   Session,
   RecentGames,
-  GuildByID,
-  GuildByPlayerName,
-  GuildByGuildName,
+  Guild,
+  Skyblock,
   Boosters,
   KeyInformation,
   GameCounts,
   PlayerCounts,
-  WatchDog
+  WatchDog,
+  Leaderboards
 }

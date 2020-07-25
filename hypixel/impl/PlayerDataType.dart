@@ -1,0 +1,4 @@
+enum PlayerDataType {
+  PlayerData,
+  Friends,
+}

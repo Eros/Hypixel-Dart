@@ -1,16 +1,13 @@
 import 'package:http/http.dart' as http;
-import 'dart:convert';
-
 import '../HypixelAPI.dart';
 
 class Player {
   Player();
 
-  Future<http.Response> getData() async {
-    var method = "";
-    print(method);
-    final response = await http.get(method);
-
-    return response;
+  Future<String> getData() async {
+    var url = HypixelAPI.BASE + 'player?key=${HypixelAPI.API_KEY}&uuid=${HypixelAPI.TEST_UUID}';
+    var response = await http.get(url);
+    print(response.body);
+    return response.body;
   }
 }
