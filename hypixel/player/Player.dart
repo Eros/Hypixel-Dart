@@ -20,4 +20,15 @@ class Player {
     Future<String> uuid = utils.convertNameToUuid(name);
     return getByUuid(uuid.toString());
   }
+
+  Future<String> getFriendsByUuid(String uuid) async {
+    url = HypixelAPI.BASE + 'friends?key=${HypixelAPI.API_KEY}&uuid=${uuid}';
+    response = await http.get(url);
+    return response.body;
+  }
+
+  Future<String> getFriendsByName(String name) async {
+    Future<String> uuid = utils.convertNameToUuid(name);
+    return getFriendsByUuid(uuid.toString());
+  }
 }
