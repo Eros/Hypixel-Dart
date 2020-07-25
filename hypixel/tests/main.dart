@@ -20,5 +20,7 @@ void main() async {
 
   {
     print(await player.getFriendsByUuid(HypixelAPI.TEST_UUID));
+    print(await player.getFriendsByName("RapidTheNerd"));
+    print(await leaderboard.getLeaderboards());
   }
 }

@@ -6,13 +6,13 @@ Dart wrapper for the Hypixel API
 
 ```dart
 
-void main() {
+void main() async {
   HypixelAPI api = HypixelAPI();
   api.setApiKey("API KEY HERE");
   
   Player player = Player();
   
-  print(player.getFriendsByName("RapidTheNerd"));
+  print(await player.getFriendsByName("RapidTheNerd"));
 }
 ```
 
