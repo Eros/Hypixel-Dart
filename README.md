@@ -4,6 +4,10 @@ Dart wrapper for the Hypixel API
 
 # Usage
 
+Download via pub with
+
+`pub get hypixel_dart`
+
 ```dart
 
 void main() async {
