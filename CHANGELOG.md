@@ -13,3 +13,9 @@
 # 0.0.4
 
 * Add in documentation
+
+# 0.0.5
+
+* Add in getting started document
+* Update pubspec description
+* Add in example into documentation
