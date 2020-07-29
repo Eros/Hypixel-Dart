@@ -1,6 +1,6 @@
 name: hypixel_dart
-description: Hypixel API wrapper
-version: 0.0.4
+description: An asynchronous wrapper for the Hypixel Network API
+version: 0.0.5
 environment:
   sdk: '>=2.0.0 <3.0.0'
 repository: https://github.com/Eros/Hypixel-Dart
