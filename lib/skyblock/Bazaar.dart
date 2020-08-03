@@ -1,5 +1,6 @@
 import 'package:http/http.dart' as http;
 import '../HypixelAPI.dart';
+import 'dart:async';
 
 class Bazaar {
 

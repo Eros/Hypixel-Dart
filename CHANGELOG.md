@@ -19,3 +19,8 @@
 * Add in getting started document
 * Update pubspec description
 * Add in example into documentation
+
+# 0.0.6
+
+* Import async lib
+    * Required for older versions of dart

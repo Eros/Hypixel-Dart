@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:http/http.dart' as http;
 import '../HypixelAPI.dart';
 import '../utils/ConverterUtils.dart';

@@ -1,6 +1,7 @@
 import 'package:http/http.dart' as http;
 import '../HypixelAPI.dart';
 import '../utils/ConverterUtils.dart';
+import 'dart:async';
 
 class Profile {
 
