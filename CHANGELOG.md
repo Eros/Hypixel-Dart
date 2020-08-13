@@ -24,3 +24,8 @@
 
 * Import async lib
     * Required for older versions of dart
+    
+# 0.0.7
+
+* Remove key from Bazaar
+    * Uses Cached data now - does not require API key

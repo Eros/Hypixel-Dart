@@ -7,7 +7,7 @@ class Bazaar {
   Bazaar();
 
   Future<String> getBazaar() async {
-    var url = HypixelAPI.BASE + 'skyblocks/bazaar?key=${HypixelAPI.API_KEY}';
+    var url = HypixelAPI.BASE + 'skyblocks/bazaar';
     var response = await http.get(url);
     return response.body;
   }

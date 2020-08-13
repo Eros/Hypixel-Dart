@@ -91,7 +91,7 @@
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span></h2>
       <pre class="language-dart"><code class="language-dart">Future&lt;String&gt; getBazaar() async {
-  var url = HypixelAPI.BASE + &#39;skyblocks&#47;bazaar?key=${HypixelAPI.API_KEY}&#39;;
+  var url = HypixelAPI.BASE + &#39;skyblocks&#47;bazaar&#39;;
   var response = await http.get(url);
   return response.body;
 }</code></pre>
@@ -107,7 +107,7 @@
 <footer>
   <span class="no-break">
     hypixel_dart
-      0.0.3
+      0.0.7
   </span>
 
 </footer>
