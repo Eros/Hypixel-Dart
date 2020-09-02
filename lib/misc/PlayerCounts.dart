@@ -1,14 +1,12 @@
-import 'package:http/http.dart' as http;
+import 'dart:async';
+import 'package:hypixel_dart/utils/RequestBuilder.dart';
 import '../HypixelAPI.dart';
-import '../player/Player.dart';
 
 class PlayerCounts {
 
   PlayerCounts();
 
   Future<String> get() async {
-    var url = HypixelAPI.BASE + 'playerCounts?key=${HypixelAPI.API_KEY}';
-    var response = await http.get(url);
-    return response.body;
+    return new RequestBuilder(HypixelAPI.BASE + 'playerCounts?key=${HypixelAPI.API_KEY}').get();
   }
 }

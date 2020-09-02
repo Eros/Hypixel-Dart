@@ -27,7 +27,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///C:/Users/George/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/meta-1.2.2",
+      "rootUri": "file:///C:/Users/George/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/meta-1.2.3",
       "packageUri": "lib/",
       "languageVersion": "1.12"
     },
@@ -74,7 +74,7 @@
       "languageVersion": "2.0"
     }
   ],
-  "generated": "2020-08-03T19:59:45.648690Z",
+  "generated": "2020-09-02T03:22:24.492937Z",
   "generator": "pub",
-  "generatorVersion": "2.8.4"
+  "generatorVersion": "2.9.2"
 }
