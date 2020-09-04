@@ -8,9 +8,6 @@ class RecentGames {
   RecentGames();
   ConverterUtils utils = ConverterUtils();
 
-  var url = null;
-  var response = null;
-
   Future<String> getByUuid(String uuid) async {
     return new RequestBuilder(HypixelAPI.BASE + 'recentgames?key=${HypixelAPI.API_KEY}&uuid=${uuid}').get();
   }

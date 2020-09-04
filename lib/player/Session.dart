@@ -8,9 +8,6 @@ class Session {
   Session();
   ConverterUtils utils = ConverterUtils();
 
-  var url = null;
-  var response = null;
-
   Future<String> getSessionByUuid(String uuid) async {
     return new RequestBuilder(HypixelAPI.BASE + 'status?key=${HypixelAPI.API_KEY}&uuid=${uuid}').get();
   }

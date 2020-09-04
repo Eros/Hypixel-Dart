@@ -8,9 +8,6 @@ class Auction {
   Auction();
   ConverterUtils utils = ConverterUtils();
 
-  var url = null;
-  var response = null;
-
   Future<String> getByName(String name) async {
     return new RequestBuilder(HypixelAPI.BASE + 'skyblock/auction?key=${HypixelAPI.API_KEY}&player=${name}').get();
   }
