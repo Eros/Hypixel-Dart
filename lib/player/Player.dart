@@ -1,6 +1,5 @@
 import 'dart:async';
-
-import 'package:http/http.dart' as http;
+import 'package:hypixel_dart/utils/RequestBuilder.dart';
 import '../HypixelAPI.dart';
 import '../utils/ConverterUtils.dart';
 
@@ -9,13 +8,8 @@ class Player {
   Player();
   ConverterUtils utils = ConverterUtils();
 
-  var url = null;
-  var response = null;
-
   Future<String> getByUuid(String uuid) async {
-    url = HypixelAPI.BASE + 'player?key=${HypixelAPI.API_KEY}&uuid=${uuid}';
-    response = await http.get(url);
-    return response.body;
+    return new RequestBuilder(HypixelAPI.BASE + 'player?key=${HypixelAPI.API_KEY}&uuid=${uuid}').get();
   }
 
   Future<String> getByName(String name) async {
@@ -24,9 +18,7 @@ class Player {
   }
 
   Future<String> getFriendsByUuid(String uuid) async {
-    url = HypixelAPI.BASE + 'friends?key=${HypixelAPI.API_KEY}&uuid=${uuid}';
-    response = await http.get(url);
-    return response.body;
+    return new RequestBuilder(HypixelAPI.BASE + 'friends?key=${HypixelAPI.API_KEY}&uuid=${uuid}').get();
   }
 
   Future<String> getFriendsByName(String name) async {

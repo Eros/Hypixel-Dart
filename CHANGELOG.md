@@ -29,3 +29,10 @@
 
 * Remove key from Bazaar
     * Uses Cached data now - does not require API key
+    
+# 0.0.8
+
+* Rebuild how the requests are sent
+    * Now implements a new request builder
+* Cleaned up the code a lot 
+* Implements all instances of `import 'dart:async';` for older versions that require it

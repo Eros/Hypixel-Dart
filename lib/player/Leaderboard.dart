@@ -1,6 +1,5 @@
 import 'dart:async';
-
-import 'package:http/http.dart' as http;
+import 'package:hypixel_dart/utils/RequestBuilder.dart';
 import '../HypixelAPI.dart';
 
 class Leaderboard {
@@ -8,8 +7,6 @@ class Leaderboard {
   Leaderboard();
 
   Future<String> getLeaderboards() async {
-    var url = HypixelAPI.BASE +'leaderboards?key=${HypixelAPI.API_KEY}';
-    var response = await http.get(url);
-    return response.body;
+    return new RequestBuilder(HypixelAPI.BASE +'leaderboards?key=${HypixelAPI.API_KEY}').get();
   }
 }

@@ -1,4 +1,5 @@
 import 'package:http/http.dart' as http;
+import 'package:hypixel_dart/utils/RequestBuilder.dart';
 import '../HypixelAPI.dart';
 import '../utils/ConverterUtils.dart';
 import 'dart:async';
@@ -8,19 +9,12 @@ class Profile {
   Profile();
   ConverterUtils utils = ConverterUtils();
 
-  var url = null;
-  var response = null;
-
   Future<String> getById(String id) async {
-    url = HypixelAPI.BASE + 'skyblock?key=${HypixelAPI.API_KEY}&profile=${id}';
-    response = await http.get(url);
-    return response.body;
+    return new RequestBuilder(HypixelAPI.BASE + 'skyblock?key=${HypixelAPI.API_KEY}&profile=${id}').get();
   }
 
   Future<String> getProfilesByUuid(String uuid) async {
-    url = HypixelAPI.BASE + 'skyblock?key=${HypixelAPI.API_KEY}&profiles=${uuid}';
-    response = await http.get(url);
-    return response.body;
+    return new RequestBuilder(HypixelAPI.BASE + 'skyblock?key=${HypixelAPI.API_KEY}&profiles=${uuid}').get();
   }
 
 
