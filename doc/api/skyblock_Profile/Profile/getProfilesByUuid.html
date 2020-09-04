@@ -60,21 +60,19 @@
         <li class="section-title">
             <a href="../../skyblock_Profile/Profile-class.html#instance-properties">Properties</a>
         </li>
-        <li><a href="../../skyblock_Profile/Profile/response.html">response</a></li>
-        <li><a href="../../skyblock_Profile/Profile/url.html">url</a></li>
+        <li class="inherited"><a href="https://api.dart.dev/stable/2.9.2/dart-core/Object/hashCode.html">hashCode</a></li>
+        <li class="inherited"><a href="https://api.dart.dev/stable/2.9.2/dart-core/Object/runtimeType.html">runtimeType</a></li>
         <li><a href="../../skyblock_Profile/Profile/utils.html">utils</a></li>
-        <li class="inherited"><a href="../../skyblock_Profile/Profile/hashCode.html">hashCode</a></li>
-        <li class="inherited"><a href="../../skyblock_Profile/Profile/runtimeType.html">runtimeType</a></li>
     
         <li class="section-title"><a href="../../skyblock_Profile/Profile-class.html#instance-methods">Methods</a></li>
         <li><a href="../../skyblock_Profile/Profile/getById.html">getById</a></li>
         <li><a href="../../skyblock_Profile/Profile/getProfilesByName.html">getProfilesByName</a></li>
         <li><a href="../../skyblock_Profile/Profile/getProfilesByUuid.html">getProfilesByUuid</a></li>
-        <li class="inherited"><a href="../../skyblock_Profile/Profile/noSuchMethod.html">noSuchMethod</a></li>
-        <li class="inherited"><a href="../../skyblock_Profile/Profile/toString.html">toString</a></li>
+        <li class="inherited"><a href="https://api.dart.dev/stable/2.9.2/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+        <li class="inherited"><a href="https://api.dart.dev/stable/2.9.2/dart-core/Object/toString.html">toString</a></li>
     
         <li class="section-title inherited"><a href="../../skyblock_Profile/Profile-class.html#operators">Operators</a></li>
-        <li class="inherited"><a href="../../skyblock_Profile/Profile/operator_equals.html">operator ==</a></li>
+        <li class="inherited"><a href="https://api.dart.dev/stable/2.9.2/dart-core/Object/operator_equals.html">operator ==</a></li>
     
     
     
@@ -84,12 +82,12 @@
   </div><!--/.sidebar-offcanvas-->
 
   <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
-      <div><h1><span class="kind-method">getProfilesByUuid</span> method</h1></div>
+      <div><h1><span class="kind-method">getProfilesByUuid</span> method </h1></div>
 
     <section class="multi-line-signature">
-      <span class="returntype">Future<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span>
+      <span class="returntype"><a href="https://api.dart.dev/stable/2.9.2/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.9.2/dart-core/String-class.html">String</a></span>&gt;</span></span>
             <span class="name ">getProfilesByUuid</span>
-(<wbr><ol class="parameter-list"><li><span class="parameter" id="getProfilesByUuid-param-uuid"><span class="type-annotation">String</span> <span class="parameter-name">uuid</span></span></li>
+(<wbr><ol class="parameter-list"><li><span class="parameter" id="getProfilesByUuid-param-uuid"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.9.2/dart-core/String-class.html">String</a></span> <span class="parameter-name">uuid</span></span></li>
 </ol>)
       
     </section>
@@ -97,9 +95,7 @@
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span></h2>
       <pre class="language-dart"><code class="language-dart">Future&lt;String&gt; getProfilesByUuid(String uuid) async {
-  url = HypixelAPI.BASE + &#39;skyblock?key=${HypixelAPI.API_KEY}&amp;profiles=${uuid}&#39;;
-  response = await http.get(url);
-  return response.body;
+  return new RequestBuilder(HypixelAPI.BASE + &#39;skyblock?key=${HypixelAPI.API_KEY}&amp;profiles=${uuid}&#39;).get();
 }</code></pre>
     </section>
 

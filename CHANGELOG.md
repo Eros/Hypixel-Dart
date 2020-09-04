@@ -36,3 +36,6 @@
     * Now implements a new request builder
 * Cleaned up the code a lot 
 * Implements all instances of `import 'dart:async';` for older versions that require it
+
+# 0.0.9
+* Updates documentation for new methods/implementation
